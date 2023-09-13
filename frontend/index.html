@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+
+
+    <!--link the css file to html file-->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <div id="editor-container">
+
+        <div id="editor-toolbar">
+            <!-- You can add toolbar buttons here -->
+
+            <button id="bold-button "><strong>B</strong></button>
+            <button id="italic-button "><em>I</em></button>
+            <button id="bullet-button ">&#8226;</button>
+            <button id="underline-button ">Underline</button>
+            <!-- Bullet symbol -->
+            <button id="number-button ">numbers</button>
+            <!-- Number symbol -->
+            <select id="font-style-select ">
+            <option value="Arial ">Arial</option>
+            <option value="Times New Roman ">Times New Roman</option>
+            <option value="Verdana ">Verdana</option>
+            <!-- Add more font options here -->
+        </select>
+        </div>
+
+
+        <div id="editor" contenteditable="true">
+            <!-- This is the editable area where the text is displayed -->
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js "></script>
+
+    <script src="/client.js "></script>
+
+
+</body>
+
+</html>
